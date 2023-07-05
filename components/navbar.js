@@ -10,7 +10,7 @@ export default function Navbar() {
     { title: 'Privacy Policy', link: './privacypolicy' },
   ];
   return (
-    <div className="flex shadow-lg">
+    <div className="flex shadow-lg sticky top-0 left-0">
       {navitems &&
         navitems.map((item) => {
           return (

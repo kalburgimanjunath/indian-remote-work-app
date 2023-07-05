@@ -1,3 +1,4 @@
 import Navbar from './navbar';
 import CompanyList from './companylist';
-export { Navbar, CompanyList };
+import JoinUs from './JoinUs';
+export { Navbar, CompanyList, JoinUs };
