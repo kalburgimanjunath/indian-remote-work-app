@@ -14,7 +14,7 @@ export default function Navbar() {
       {navitems &&
         navitems.map((item) => {
           return (
-            <div className="item">
+            <div className="item hover:bg-red-100">
               <a href={item.link}>{item.title}</a>
             </div>
           );
