@@ -3,7 +3,7 @@ import styles from '../styles/Home.module.css';
 
 export default function Home() {
   return (
-    <div className="container mx-auto">
+    <div className="container">
       <h1 className="font-bold text-lg">
         Find your next digital/tech remote job in India
       </h1>
@@ -28,6 +28,7 @@ export default function Home() {
           <input type="text" />
         </div>
       </div>
+      <div>Jobs List</div>
     </div>
   );
 }

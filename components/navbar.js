@@ -5,12 +5,12 @@ export default function Navbar() {
     { title: 'Remote Community', link: './remotecommunity' },
     { title: 'Remote Companies Hiring', link: './remotecompanies' },
     { title: 'Post a Remote Job', link: './postjob' },
-    { title: 'Search remote jobs', link: './searchjobs' },
+    { title: 'Search remote jobs', link: './' },
     { title: 'Contact Us', link: './contactus' },
     { title: 'Privacy Policy', link: './privacypolicy' },
   ];
   return (
-    <div className="flex">
+    <div className="flex shadow-lg">
       {navitems &&
         navitems.map((item) => {
           return (
