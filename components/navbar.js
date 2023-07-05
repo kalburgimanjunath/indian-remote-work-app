@@ -7,14 +7,14 @@ export default function Navbar() {
     { title: 'Post a Remote Job', link: './postjob' },
     { title: 'Search remote jobs', link: './searchjobs' },
     { title: 'Contact Us', link: './contactus' },
-    { title: 'Privacy Policy', link: './provacypolicy' },
+    { title: 'Privacy Policy', link: './privacypolicy' },
   ];
   return (
-    <div className="navbar">
+    <div className="flex">
       {navitems &&
         navitems.map((item) => {
           return (
-            <div className="item hover:bg-red-100">
+            <div className="bg-red-50 hover:bg-red-100 p-2">
               <a href={item.link}>{item.title}</a>
             </div>
           );
