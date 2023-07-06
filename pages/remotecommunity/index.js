@@ -14,6 +14,18 @@ export default function index() {
       vote: 1,
       comments: 10,
     },
+    {
+      id: 1,
+      title:
+        'I am video editing and translation languages and video posting and any other etc',
+      user: {
+        name: 'M.Luqman Hashmi',
+        bio: 'writing and video editing',
+        created_at: '20-06-2023',
+      },
+      vote: 1,
+      comments: 10,
+    },
   ];
   return (
     <div>
@@ -23,9 +35,9 @@ export default function index() {
         {PUBLICATIONS &&
           PUBLICATIONS.map((item) => {
             return (
-              <div className="bg-gray-100 p-4 cursor-pointer">
-                <div className="flex">
-                  <span className="pl-0 p-2">Publication</span>
+              <div className="bg-white-100 p-4 cursor-pointer rounded-lg border-color-gray-100 border-2 mt-4">
+                <div className="flex text-xs text-slate-400">
+                  <span className="rounded-5 border-2 p-1">Publication</span>
                   <span className="p-2">Updated 6 days ago</span>
                 </div>
                 <div className="flex">
@@ -38,7 +50,26 @@ export default function index() {
                   </div>
                   <div className="m-2">
                     <div className="font-bold">{item.user.name}</div>
-                    <div>{item.user.bio}</div>
+                    <div className="flex">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-6 h-6 text-xs text-slate-400"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+                        />
+                      </svg>
+
+                      <span className="text-xs text-slate-400">
+                        {item.user.bio}
+                      </span>
+                    </div>
                   </div>
                 </div>
                 <div className="m-2">{item.title}</div>
