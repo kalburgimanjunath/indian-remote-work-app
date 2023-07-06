@@ -3,18 +3,18 @@ import { useState } from 'react';
 export default function Navbar() {
   const navitems1 = [
     // { title: 'sign in/sign up', link: './signin' },
-    { title: 'Remote Community', link: './remotecommunity' },
-    { title: 'Remote Companies Hiring', link: './remotecompanies' },
+    { title: 'Remote Community', link: '../remotecommunity' },
+    { title: 'Remote Companies Hiring', link: '../remotecompanies' },
     // { title: 'Post a Remote Job', link: './postjob' },
     // { title: 'Search remote jobs', link: './' },
     // { title: 'Contact Us', link: './contactus' },
     // { title: 'Privacy Policy', link: './privacypolicy' },
   ];
   const navitems2 = [
-    { title: 'Sign in/Sign up', link: './signin' },
+    { title: 'Sign in/Sign up', link: '../signin' },
     // { title: 'Remote Community', link: './remotecommunity' },
     // { title: 'Remote Companies Hiring', link: './remotecompanies' },
-    { title: 'Post a Remote Job', link: './postjob' },
+    { title: 'Post a Remote Job', link: '../postjob' },
     // { title: 'Search remote jobs', link: './' },
     // { title: 'Contact Us', link: './contactus' },
     // { title: 'Privacy Policy', link: './privacypolicy' },
