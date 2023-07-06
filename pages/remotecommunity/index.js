@@ -1,6 +1,7 @@
 import { JoinUs } from '../../components/';
-
+import { useState } from 'react';
 export default function index() {
+  const [vote, setVote] = useState(0);
   const PUBLICATIONS = [
     {
       id: 1,
